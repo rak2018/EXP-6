@@ -1,5 +1,5 @@
 # EXP-6
-EXP - 6 SIMULATION OF MEAN AND VARIANCE USING SCILAB
+EXP - 6 SIMULATION OF MEAN , VARIANCE AND CROSS CORRELATION USING SCILAB
 
 AIM:
 
@@ -61,15 +61,35 @@ r=corr(x,y,n1);
 plot2d3('gnn',r);
 ```
 
+Cross Correlation
+```
+x= input("type in the reference sequence="); y= input("type in the second sequence="); n1=max(size(y))-1;
+n2=max(size(x))-1;
+r=corr(x,y,n1);
+plot2d3('gnn',r);
+```
+
 OUTPUT
 
 i)	Mean of X =	0.25 Mean of Y =	0.25
 
 ii)	Variance of X	 0.0375 Variance of Y	0.0375
 
+Cross Correlation
+
+Type in the reference sequence = [1 2 3 4 5 6 7 8]
+
+Type in the second sequence = [2 1 3 5 6 3 5 9]
+
+
 TABULATION
 
 ![WhatsApp Image 2026-04-10 at 02 18 41](https://github.com/user-attachments/assets/9df21e6b-4965-4f79-bc27-213d865d2647)
+ 
+ OUTPUT WAVEFORM 
+
+ ![WhatsApp Image 2026-04-10 at 02 25 50](https://github.com/user-attachments/assets/d4bc03e5-c47a-4626-b56d-9fa50d071954)
+
 
 
 
